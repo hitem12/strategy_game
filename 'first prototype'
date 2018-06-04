@@ -1,0 +1,27 @@
+First prototype
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   strategy_game.sln
+#	new file:   strategy_game/SevenKingdoms_graphics.7z
+#	new file:   strategy_game/global_function.cpp
+#	new file:   strategy_game/global_function.h
+#	new file:   strategy_game/main.cpp
+#	new file:   strategy_game/sg_cannon.cpp
+#	new file:   strategy_game/sg_cannon.h
+#	new file:   strategy_game/sg_object.cpp
+#	new file:   strategy_game/sg_object.h
+#	new file:   strategy_game/sg_unit.cpp
+#	new file:   strategy_game/sg_unit.h
+#	new file:   strategy_game/strategy_game.vcxproj
+#	new file:   strategy_game/strategy_game.vcxproj.filters
+#	new file:   strategy_game/strategy_game.vcxproj.user
+#
+# Untracked files:
+#	.gitignore
+#	.vs/
+#
