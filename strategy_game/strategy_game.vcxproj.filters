@@ -30,6 +30,9 @@
     <ClCompile Include="sg_cannon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="move.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sg_object.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="sg_cannon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="move.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

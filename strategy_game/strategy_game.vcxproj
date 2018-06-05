@@ -127,12 +127,14 @@
   <ItemGroup>
     <ClCompile Include="global_function.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="move.cpp" />
     <ClCompile Include="sg_cannon.cpp" />
     <ClCompile Include="sg_object.cpp" />
     <ClCompile Include="sg_unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="global_function.h" />
+    <ClInclude Include="move.h" />
     <ClInclude Include="sg_cannon.h" />
     <ClInclude Include="sg_object.h" />
     <ClInclude Include="sg_unit.h" />

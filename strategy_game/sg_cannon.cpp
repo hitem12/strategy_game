@@ -10,7 +10,7 @@ void sg_cannon::actions()
 	//static sf::Time l_time;
 	
 	
-	if (n_time.asMicroseconds() - l_time.asMicroseconds() > 20000)
+	if (n_time.asMicroseconds() - l_time.asMicroseconds() > 1000)
 	{
 		sprite.setTexture(texture[i%3]);
 		i++;
