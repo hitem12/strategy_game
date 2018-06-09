@@ -21,24 +21,27 @@
     <ClCompile Include="sg_object.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sg_unit.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="global_function.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sg_cannon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="move.cpp">
+    <ClCompile Include="sg_move.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sg_animate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sg_animated_sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sg_animation_builder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sg_object.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="sg_unit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="global_function.h">
@@ -47,7 +50,16 @@
     <ClInclude Include="sg_cannon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="move.h">
+    <ClInclude Include="sg_move.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sg_animate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sg_animated_sequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sg_animation_builder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

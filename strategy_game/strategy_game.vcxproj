@@ -127,17 +127,21 @@
   <ItemGroup>
     <ClCompile Include="global_function.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="move.cpp" />
+    <ClCompile Include="sg_animate.cpp" />
+    <ClCompile Include="sg_animated_sequence.cpp" />
+    <ClCompile Include="sg_animation_builder.cpp" />
+    <ClCompile Include="sg_move.cpp" />
     <ClCompile Include="sg_cannon.cpp" />
     <ClCompile Include="sg_object.cpp" />
-    <ClCompile Include="sg_unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="global_function.h" />
-    <ClInclude Include="move.h" />
+    <ClInclude Include="sg_animate.h" />
+    <ClInclude Include="sg_animated_sequence.h" />
+    <ClInclude Include="sg_animation_builder.h" />
+    <ClInclude Include="sg_move.h" />
     <ClInclude Include="sg_cannon.h" />
     <ClInclude Include="sg_object.h" />
-    <ClInclude Include="sg_unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

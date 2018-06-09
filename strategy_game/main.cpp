@@ -18,7 +18,7 @@ int main()
 	sf::Clock clock;
 	sf::Clock clock2;
 	int frames{ 0 };
-	//CreateDirectory(TEXT("tujestem"), NULL);
+//	CreateDirectory(TEXT("tujestem"), NULL);
 	sf::Vector2i ala;
 
 
@@ -37,10 +37,10 @@ int main()
 			{
 				//cout << "x = " <<  sf::Mouse::getPosition(window).x << " y = " << sf::Mouse::getPosition(window).y << '\r';
 
-				cannon.move(sf::Mouse::getPosition(window));
+				cannon.set_destination(sf::Mouse::getPosition(window));
 			}
 		}
-		cannon.actions();
+		cannon.actions(clock.getElapsedTime());
 	//	cannon.actions(clock.getElapsedTime());
 		//ala = sf::Mouse::getPosition(window);
 
@@ -53,12 +53,12 @@ int main()
 		window.display();
 		//cout << clock.getElapsedTime().asMicroseconds() << "        \r";
 		frames++;
-		if (clock2.getElapsedTime().asMicroseconds() >= 1000000)
-		{
-			cout << "frames per sec = " << frames << "             \r";
-			frames = 0;
-			clock2.restart();
-		}
+		//if (clock2.getElapsedTime().asMicroseconds() >= 1000000)
+		//{
+		//	cout << "frames per sec = " << frames << "             \r";
+		//	frames = 0;
+		//	clock2.restart();
+		//}
 		
 		clock.restart();
 	} 

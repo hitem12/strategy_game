@@ -1,4 +1,4 @@
-#include "sg_unit.h"
+
 #include "sg_object.h"
 
 //TODO to sie nie powinno zawsze wykonywac
