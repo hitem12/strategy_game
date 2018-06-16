@@ -2,7 +2,7 @@
 #include <cmath>
 #include "sg_cannon.h"
 #include "global_function.h"
-//#include <windows.h>
+#include <windows.h>
 
 constexpr int hight = 800;
 constexpr int lengh = 600;
@@ -20,7 +20,9 @@ int main()
 	int frames{ 0 };
 //	CreateDirectory(TEXT("tujestem"), NULL);
 	sf::Vector2i ala;
-
+	char NPath[MAX_PATH];
+	GetCurrentDirectoryA(MAX_PATH, NPath);
+	cout << NPath << endl;
 
 
 	

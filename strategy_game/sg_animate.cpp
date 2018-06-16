@@ -18,7 +18,7 @@ sg_animate::~sg_animate()
 {
 }
 
-void sg_animate::operator()(sf::Time lap_time)
+void sg_animate::operator()(sf::Time lap_time, sf::Vector2f vec_mv)
 {
 	
 	if (!is_Paused) //If it's not be paused
@@ -26,7 +26,7 @@ void sg_animate::operator()(sf::Time lap_time)
 		time += lap_time;	
 		if (time > frame_time)		// and time is grater then animation time
 		{	
-			cout << "jestem"<< endl;
+		
 			sprite->setTexture(*animations[current_animation]->get_current_texture());
 			time = sf::Time::Zero;
 			

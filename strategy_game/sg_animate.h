@@ -18,7 +18,7 @@ public:
 	void add_animation(); 
 	sg_animate(sf::Sprite*);
 	~sg_animate();
-	void operator()(sf::Time);
+	void operator()(sf::Time, sf::Vector2f vec_mv = sf::Vector2f(0,0));
 	void Start();
 	void Stop();
 	void Pause();

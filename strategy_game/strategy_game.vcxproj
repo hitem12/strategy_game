@@ -127,6 +127,7 @@
   <ItemGroup>
     <ClCompile Include="global_function.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="pugixml\pugixml.cpp" />
     <ClCompile Include="sg_animate.cpp" />
     <ClCompile Include="sg_animated_sequence.cpp" />
     <ClCompile Include="sg_animation_builder.cpp" />
@@ -136,6 +137,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="global_function.h" />
+    <ClInclude Include="pugixml\pugiconfig.hpp" />
+    <ClInclude Include="pugixml\pugixml.hpp" />
     <ClInclude Include="sg_animate.h" />
     <ClInclude Include="sg_animated_sequence.h" />
     <ClInclude Include="sg_animation_builder.h" />

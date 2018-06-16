@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Animations>
+	<Cannon dir = "graphics/sprites/cannon/">
+		<move>
+			<S>
+				<frame> 0000.png </frame>
+				<frame> 0001.png </frame>
+				<frame> 0002.png </frame>
+			</S>
+				<frame> 0004.png </frame>
+				<frame> 0005.png </frame>
+				<frame> 0006.png </frame>
+			<SE>
+				<frame> 0007.png </frame>
+				<frame> 0008.png </frame>
+				<frame> 0009.png </frame>
+			</SE>
+			<E>
+				<frame> 0010.png </frame>
+				<frame> 0011.png </frame>
+				<frame> 0012.png </frame>
+			</E>
+			
+			<NE>
+				<frame> 0013.png </frame>
+				<frame> 0014.png </frame>
+				<frame> 0015.png </frame>
+			</NE>
+			
+			<N>
+				<frame> 0016.png </frame>
+				<frame> 0017.png </frame>
+				<frame> 0018.png </frame>
+			</N>
+		</move>		
+	</Cannon>
+	<Giantet>
+			<S>
+			
+			</S>
+			
+			<SE>
+			</SE>
+			
+			<E>
+			</E>
+			
+			<NE>
+			</NE>
+			
+			<N>
+			</N>
+	</Giantet> 
+
+
+
+</Animations>

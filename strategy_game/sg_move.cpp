@@ -8,7 +8,7 @@ sg_move::sg_move(sf::Sprite * sprite_to_move, float unit_speed)
 
 
 
-void sg_move::operator()(sf::Time frame_t)
+sf::Vector2f sg_move::operator()(sf::Time frame_t)
 {	
 	//static sf::Time l_time;
 	//	sf::Time n_time = clock.getElapsedTime();
@@ -26,12 +26,14 @@ void sg_move::operator()(sf::Time frame_t)
 			vec.x *= speed * a;
 			vec.y *= speed * a;
 			sprite->move(vec);
+			return vec;
 
 		}
 
 		else
 		{
 			sprite->setPosition(destination);
+			return sf::Vector2f(0,0);
 		}
 	}
 

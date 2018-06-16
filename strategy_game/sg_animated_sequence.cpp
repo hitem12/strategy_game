@@ -20,7 +20,9 @@ sg_animated_sequence::sg_animated_sequence(string a_name)
 	{
 		texture = new sf::Texture;
 		string i_s = to_string(i);
-		texture->loadFromFile("graphics\\sprites\\cannon\\" + string(4 - i_s.size(), '0') + i_s + ".png");
+		string dir{ "graphics/sprites/cannon/" + string(4 - i_s.size(), '0') + i_s + ".png" };
+		texture->loadFromFile(dir);
+		//texture->loadFromFile("graphics\\sprites\\cannon\\" + string(4 - i_s.size(), '0') + i_s + ".png");
 		
 		T_seq.push_back(texture);
 		texture = nullptr;

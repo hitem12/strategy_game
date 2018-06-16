@@ -23,9 +23,9 @@ void sg_cannon::set_destination(float x, float y)
 
 void sg_cannon::actions(sf::Time frame_t)
 {
-	move(frame_t);
+	auto vec = move(frame_t);
 	anime(frame_t);
-	cout << sprite.getTexture() << "                  \r";
+	//cout << sprite.getTexture() << "                  \r";
 	//sf::Time n_time = clock.getElapsedTime();
 	//sg_unit::actions(n_time);
 	//static int i;
