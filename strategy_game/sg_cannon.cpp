@@ -24,7 +24,7 @@ void sg_cannon::set_destination(float x, float y)
 void sg_cannon::actions(sf::Time frame_t)
 {
 	auto vec = move(frame_t);
-	anime(frame_t);
+	anime(frame_t, vec);
 	//cout << sprite.getTexture() << "                  \r";
 	//sf::Time n_time = clock.getElapsedTime();
 	//sg_unit::actions(n_time);
@@ -54,7 +54,7 @@ sg_cannon::sg_cannon(sf::Vector2f xy)
 	//	texture[i].loadFromFile("graphics\\sprites\\cannon\\" + string(4 - i_s.size(), '0') + i_s + ".png");
 	//}
 	//sprite.setTexture(texture[0]);
-	sprite.setTexture( *anime.animations[0]->T_seq[7]);
+	//sprite.setTexture( *anime.animations[0]->T_seq[7]);
 	anime.Start();
 	
 }

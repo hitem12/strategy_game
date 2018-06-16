@@ -10,18 +10,20 @@ sg_move::sg_move(sf::Sprite * sprite_to_move, float unit_speed)
 
 sf::Vector2f sg_move::operator()(sf::Time frame_t)
 {	
+	constexpr int tr{8}; // range of unit teleportation 
 	//static sf::Time l_time;
 	//	sf::Time n_time = clock.getElapsedTime();
 	sf::Vector2f vec = (destination - sprite->getPosition());
+	
 
-	if (vec != sf::Vector2f(0, 0))
+	if (!!vec)
 	{
-		if (abs(vec.x) > speed || abs(vec.y) > speed)
+		if (abs(vec.x) > speed/tr || abs(vec.y) > speed/tr)
 		{
 			float a = sqrtf(pow(vec.x, 2) + pow(vec.y, 2));
 			vec.x /= a;
 			vec.y /= a;
-
+			
 			a = frame_t.asMicroseconds() * 0.0001;
 			vec.x *= speed * a;
 			vec.y *= speed * a;
@@ -36,7 +38,11 @@ sf::Vector2f sg_move::operator()(sf::Time frame_t)
 			return sf::Vector2f(0,0);
 		}
 	}
-
+	else 
+	{
+		return vec;
+	}
+	
 }
 
 

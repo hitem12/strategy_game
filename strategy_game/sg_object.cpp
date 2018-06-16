@@ -5,16 +5,16 @@
 
 sg_object::sg_object(float x, float y )
 {
-	if (texture.loadFromFile("graphics\\sprites\\cannon\\0000.png") == false) cout << "dont recognize texture\n";
-	sprite.setTexture(texture);
+	//if (texture.loadFromFile("graphics\\sprites\\cannon\\0000.png") == false) cout << "dont recognize texture\n";
+	//sprite.setTexture(texture);
 	sprite.setPosition(x, y);
 	
 }
 
 sg_object::sg_object(sf::Vector2f xy)
 {
-	if (texture.loadFromFile("graphics\\sprites\\cannon\\0001.png") == false) cout << "dont recognize texture\n";
-	sprite.setTexture(texture);
+	//if (texture.loadFromFile("graphics\\sprites\\cannon\\0001.png") == false) cout << "dont recognize texture\n";
+	//sprite.setTexture(texture);
 	sprite.setPosition(xy);
 }
 
