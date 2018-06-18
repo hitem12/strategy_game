@@ -9,13 +9,17 @@ protected:
 
 	sf::Sprite sprite;
 	sf::Texture texture;
-	sf::Clock clock;
+	sg_object(float x = 0, float y = 0);
+	sg_object(sf::Vector2f);
 public:
 	
 	sf::Sprite getSprite();
 	
-	sg_object(float x = 0, float y = 0);
-	sg_object(sf::Vector2f);
-	~sg_object();
+	virtual void actions(sf::Time frame_t) {};
+	sg_object(float x, float y, sf::Texture tex) : sg_object(sf::Vector2f(x, y), tex) {};
+	sg_object(sf::Vector2f, sf::Texture);
+
+
+	virtual ~sg_object();
 };
 

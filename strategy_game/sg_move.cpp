@@ -10,9 +10,8 @@ sg_move::sg_move(sf::Sprite * sprite_to_move, float unit_speed)
 
 sf::Vector2f sg_move::operator()(sf::Time frame_t)
 {	
-	constexpr int tr{8}; // range of unit teleportation 
-	//static sf::Time l_time;
-	//	sf::Time n_time = clock.getElapsedTime();
+	constexpr int tr{8}; // range of unit teleportation (part of speed)
+
 	sf::Vector2f vec = (destination - sprite->getPosition());
 	
 
@@ -44,11 +43,6 @@ sf::Vector2f sg_move::operator()(sf::Time frame_t)
 	}
 	
 }
-
-
-
-
-
 
 
 

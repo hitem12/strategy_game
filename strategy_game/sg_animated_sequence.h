@@ -1,7 +1,6 @@
 #pragma once
 #include <string>
 #include <SFML/Graphics.hpp>
-//#include "sg_animation_builder.h"
 #include <iostream>
 
 using namespace std;
@@ -19,11 +18,9 @@ class sg_animated_sequence
 	void set_sequence(vector<sf::Texture*>);
 	vector<sf::Texture*> T_seq_v;
 	sf::Texture* T_seq;
-	
-public:
 	sg_animated_sequence(string a_name);
+public:
 	
-
 	string getName() { return name; };
 	sf::Texture * get_current_texture();
 	~sg_animated_sequence();

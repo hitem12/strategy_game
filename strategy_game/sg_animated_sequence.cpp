@@ -9,6 +9,7 @@ void sg_animated_sequence::add_frame(sf::Texture * texture)
 
 void sg_animated_sequence::add_frame(string pic_dir)
 {
+	//cout << "|"<<pic_dir <<"|"<< endl;
 	sf::Texture * texture = new sf::Texture;
 	texture->loadFromFile(pic_dir);
 	T_seq_v.push_back(texture);
@@ -23,19 +24,7 @@ void sg_animated_sequence::set_sequence(vector<sf::Texture*> vec_tex)
 sg_animated_sequence::sg_animated_sequence(string a_name)
 	: name(a_name), current_frame{ 0 }
 {
-	//sf::Texture * texture;
-	//for (int i = 0; i < 31; i++)
-	//{
-	//	texture = new sf::Texture;
-	//	string i_s = to_string(i);
-	//	string dir{ "graphics/sprites/cannon/" + string(4 - i_s.size(), '0') + i_s + ".png" };
-	//	texture->loadFromFile(dir);
-	//	//texture->loadFromFile("graphics\\sprites\\cannon\\" + string(4 - i_s.size(), '0') + i_s + ".png");
-	//	
-	//	T_seq_v.push_back(texture);
-	//	texture = nullptr;
-	//	
-	//}
+
 }
 
 sf::Texture * sg_animated_sequence::get_current_texture()

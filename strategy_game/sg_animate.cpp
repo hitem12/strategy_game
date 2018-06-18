@@ -5,15 +5,7 @@
 sg_animate::sg_animate(sf::Sprite * spr) 
 	: current_animation{ 0 }, frame_time { sf::seconds(0.01) }, is_Paused{true}, old_vec {sf::Vector2f(0,0)}
 {
-	//is_Paused = true;
-	//frame_time = sf::seconds(0.01);
-	//current_animation = 0;
-
-
 	
-	//sg_animated_sequence * anime;
-	//anime = new sg_animated_sequence { "cannon" };
-	//animations.push_back(anime);
 	sg_animation_builder cannon{"cannon"};
 	animations = cannon.get_seq();
 	sprite = spr;
@@ -66,7 +58,7 @@ void sg_animate::operator()(sf::Time lap_time, sf::Vector2f vec_mv)
 							Swich_Animation("move_E");
 						if (vec_mv.x < 0)
 						{
-							//sprite->setRotation(180);
+							
 							sprite->setScale(-1.0f, 1.0f);
 							sprite->move(sf::Vector2f(60, 0));
 							is_left = true;

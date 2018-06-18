@@ -30,12 +30,10 @@ sg_animation_builder::sg_animation_builder(string obj_name)
 			
 			for (pugi::xml_node frame : type)
 			{
-				seq.back()->add_frame(obj.attribute("dir").as_string() + string(frame.child_value()));
-				//cout << string(anime.name()) + '_' + string(type.name()) << endl;
-				//cout << " dir = " << obj.attribute("dir").as_string() <<  string(frame.child_value()) << endl;
-				//cout << "@" <<string(frame.child_value());
-					
-				//cout << anime.name() << "_" << type.name() << " dir  = " << obj.attribute("dir").as_string() << frame.child_value() << endl;
+				string dir = obj.attribute("dir").as_string() + string(frame.child_value());
+				//cout << dir << endl;
+				seq.back()->add_frame(dir);
+
 			}
 			
 		}
